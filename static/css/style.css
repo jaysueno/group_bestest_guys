@@ -50,11 +50,11 @@ html, body {
 }
 
 .cont button {
-color: var(--font-color);
-background: var(--color-primary);
-padding: 10px 20px;
-border: 0;
-border-radius: 5px;
+    color: var(--font-color);
+    background: var(--color-primary);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
 }
 
 h4 {
@@ -66,8 +66,29 @@ h4 {
     font-size: smaller;
 }
 
-#about-deck {
+a {
+    color: var(--font-color) !important;
+}
+
+img {
+   position: relative;
+   width: 100%; 
+   height: auto;
+}
+
+.icon {
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.thumbnail {
+    padding: 10px;
     margin: auto;
+}
+
+.about-links {
+    margin: auto;
+    text-align: center;
 }
 
 /* The switch - the box around the slider */
