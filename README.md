@@ -1,5 +1,5 @@
 <h1 align="center"> Trump Tweet Analysis </h1>
-<p align="center"> A look at President Trump’s Tweet Sentiment and how it affects the US Market Economy </p>
+<p align="center"> A look at President Trump’s Tweet Sentiment and how it affects the US Market Economy. Please note this is not meant to take any political stance. </p>
 
 ###
 <img src= "https://images.indianexpress.com/2017/11/trump-twitter-copy.jpg" align = "center"/>
@@ -17,8 +17,8 @@ Horoku site https://team-beastest-guys.herokuapp.com/
 
 ## Contributors (in alphabetical order)
 
-- Elisa Gipe
 - Drew Gilmore
+- Elisa Gipe
 - Jay Sueno
 - Patrick Plaisted
 
