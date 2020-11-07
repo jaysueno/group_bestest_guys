@@ -1,8 +1,8 @@
 // Makes the currently selected view 'active' and removes 'active' from others
-$(".navbar-nav .nav-link").on("click", function(){
-    $(".navbar-nav").find(".active").removeClass("active");
-    $(this).addClass("active");
- });
+// $(".navbar-nav .nav-link").on("click", function(){
+//     $(".navbar-nav").find(".active").removeClass("active");
+//     $(this).addClass("active");
+//  });
 
 // function to set a given theme/color-scheme
 function setTheme(themeName) {

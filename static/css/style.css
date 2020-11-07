@@ -3,12 +3,14 @@
     --color-secondary: #fbfbfe;
     --color-accent: #fd6f53;
     --font-color: #000000;
+    --color-body: #afafaf;
 }
 .theme-dark {
     --color-primary: #17ed90;
     --color-secondary: #243133;
     --color-accent: #12cdea;
     --font-color: #ffffff;
+    --color-body: grey;
 }
 
 html, body {
@@ -17,13 +19,13 @@ html, body {
     height: auto;
     width: 100%;
     color: var(--font-color) !important;
-    background: var(--color-secondary) !important;
+    background: var(--color-body) !important;
 }
 
 .navbar {
     border-bottom: var(--font-color);
-    margin-bottom: 50px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px var(--color-accent);
+    background: var(--color-secondary);
 }
 
 .navbar-light .navbar-brand {
@@ -34,18 +36,20 @@ html, body {
     color: var(--font-color) !important;
 }
 
-.container {
+.cont {
     display: flex;
     width: 100%;
     height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 15px;
     border: 10px thick black;
+    background: var(--color-secondary);
+    box-shadow: 5px 5px 5px var(--color-accent);
 }
 
-.container button {
+.cont button {
 color: var(--font-color);
 background: var(--color-primary);
 padding: 10px 20px;
@@ -53,8 +57,17 @@ border: 0;
 border-radius: 5px;
 }
 
+h4 {
+    font-size: small !important;
+}
+
 #footer {
     text-align: center;
+    font-size: smaller;
+}
+
+#about-deck {
+    margin: auto;
 }
 
 /* The switch - the box around the slider */
