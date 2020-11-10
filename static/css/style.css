@@ -64,6 +64,15 @@ h4 {
 #footer {
     text-align: center;
     font-size: smaller;
+    padding-top: 7px;
+}
+
+#carouselIndicators {
+  padding-bottom: 7px;
+}
+
+.carousel-item {
+  object-fit: cover !important;
 }
 
 a {
