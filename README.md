@@ -51,7 +51,7 @@ This data set was used to evaluate the sentiment of President Trump's tweets dur
 2. Visualizing the Data
 - Visualization of the data was done using both Tableau and Javascript Libraries (Plotly).
 
-3. Modeling
+3. Machine Learning Modeling
 - Seeking to test correlation between tweet sentiment data and S&P, machine learning algorithms were used to evaluate the relationship between the data sets.
 - Features of the data were selected for importance and an extra tree classifier was used to further decide which were best suited for model.
 - Selected features were used within several algorithms (Random Forest, Neural Network and K-Nearest Neighbor) using the sklearn library.
