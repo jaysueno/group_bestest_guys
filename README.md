@@ -24,6 +24,8 @@ Horoku site https://team-beastest-guys.herokuapp.com/
 
 ## Background
 
+<img src="../static/Images/top 10 days on twitter by volumne.png" width="645" height="955">
+
 Social media has changed communication channels across the world, the highest office in the country is not immune. Throughout his time in office, President Donald Trump has notably used Twitter and other social media platforms to engage with the nation. From his official declaration of candidacy in June 2015 through the first two-and-a-half years of his presidency, he tweeted over 17,000 times. Since early in his presidency, his tweets have been considered official statements by the president of the United States. While the rate of tweeting has varied, the president’s most prolific day was June 5, 2020 where he tweeted 200 times. In addition to the tweets he puts out, he is also the intended recipient of tweets by others. In 2019, Donald Trump was tagged on Twitter at a rate of 1,000 times per minute, according to The New York Times.
 
 The S&P 500 (S&P) is a stock market index that measures stock performance of the 500 largest companies listed on the stock exchange in the United States. The index is one of the factors in computation of the Conference Board Leading Economic Index, used to forecast the direction of the economy. 
