@@ -1,36 +1,111 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{% block title %} The Goodest Guys Present: Machine Learning! {% endblock %}</h1>
+    <h1>{% block title %} Trump Tweet Analysis {% endblock %}</h1>
+    <h5 style="text-align: center;">Project Methodology</h5>
+    <hr>
     <div class="container">
+        <h2>Project Purpose and Overview</h2>
         <div class="row">
             <div class="col-7">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p>This project will evaluate any correlation that may exist between President Donald Trump’s Tweet History 
+                    and the movement of the S&P index. The analysis of the historical tweet data will be used to evaluate if 
+                    future tweets can predict market fluctuation.</p>
+
+                <p>The Hedonometer Word Sentiment Data, in order "to quantify the happiness of the atoms of language", merged 
+                    the 5,000 most frequent words from a collection of four corpora: Google Books, New York Times articles, 
+                    Music Lyrics, and Twitter messages, resulting in a composite set of roughly 10,000 unique words. Using 
+                    Amazon’s Mechanical Turk service, we (research of Peter Dodds and Chris Danforth and their team in the 
+                    Computational Story Lab, including visualization by Andy Reagan, at the University of Vermont Complex Systems 
+                    Center, and the technology of Brian Tivnan, Matt McMahon and their team from The MITRE Corporation) had each 
+                    of these words scored on a nine point scale of happiness: (1) sad to (9) happy. You can explore the average 
+                    scores of each word on our words page, or download the entire list from the publication supplement here. On 
+                    a few occasions, we've updated the word list to include new terms that were uncommon when the original survey 
+                    was conducted.
+                </p>
+                    
+                <p>This data set was used to evaluate the sentiment of President Trump's tweets during his Presidency from 
+                    2016-2020 by taking an average of the rating based on each of the words used in his tweets. That sentiment 
+                    value was put on a categorical scale, ranking tweets as positive, negative or neutral, and compared over time 
+                    against the S&P 500 percentage change over time. Assuming correlation, those data sets were also modeled 
+                    to see if we could predict and up or downturn of the market based on the President's sentiment scores averaged 
+                    over the course of a given day.
                 </p>
             </div>
             <div class="col-5">
                 <img src="../static/Images/300px-Buddy_christ.jpg">
             </div>
         </div>
+        <h2>Methodology</h2>
         <div class="row">
             <div class="col-5">
                 <img src="../static/Images/300px-Buddy_christ.jpg">
             </div>
             <div class="col-7">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                    <p>1. Cleaning the Data:</p>
+                    <ul>
+                        <li>Each data set was converted to Pandas Dataframe.</li>
+                        <li>S&P Data: Data was grouped by day, week and month, and the percentage change and trend(up/down)
+                                was calculated.</li>
+                        <li>Trump Tweet data: Sentiment data was calculated by associating score with each word of the tweet 
+                            and an average and sum of all of the words within each tweet was calculated. Tweets were grouped 
+                            by day with an average of tweet sentiment across all tweets in a given day, assigned categorical 
+                            values (negative, neutral, positive) based on average sentiment value (brought from Hedonometer 
+                            data).</li>
+                    </ul>
+                    <p>2. Visualizing the Data</p>
+                    <ul>
+                        <li>Visualization of the data was done using both Tableau and Javascript Libraries (Plotly).</li>
+                    </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-7">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <p>3. Machine Learning Modeling</p>
+                <ul>
+                    <li>Seeking to test correlation between tweet sentiment data and S&P, machine learning algorithms were used to evaluate the relationship between the data sets.</li>
+                    <li>Features of the data were selected for importance and an extra tree classifier was used to further decide which were best suited for model.</li>
+                    <li>Selected features were used within several algorithms (Random Forest, Neural Network and K-Nearest Neighbor) using the sklearn library.</li>
+                    <li>Data was split into training and test group, pre-processed by scaling features, and the models were then trained to gather accuracy scores.</li>
+                    <li>Hyper-tuning of the models was done to further define parameters in each model for suggestions.</li>
+                    <li>Following the hyper-tuning, the data was re-entered to improve accuracy of the training models to decide which had highest accuracy.</li>
+                    <li>Though decreasing the size of the data set from 10,000+ to 600-700 records, accuracy of the model was increased by 10% when the data was filtered to use only tweets that included the terms "economy", "stock" and "market".</li>
+                </ul>
+            </div>
+            <div class="col-5">
+                <a href="../static/Images/random_tree_vis2.png">
+                    <img src="../static/Images/random_tree_vis2.png">
+                </a>
+                <a href="../static/Images/300px-Buddy_christ.jpg">
+                    <img src="../static/Images/300px-Buddy_christ.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <a href="../static/Images/frontend_code_ss.png">
+                    <img src="../static/Images/frontend_code_ss.png">
+                </a>
+            </div>
+            <div class="col-7">
+                <p>4. Front-end Delivery</p>
+                <ul>
+                    <li>Preparation of the web app started with a base flask application and 4 routes were built.</li>
+                    <li>A base template for flask was built using Jinja to serve webpages for the content. Bootstrap was used for a carousel on the homepage and to make the webpage responsive.</li>
+                    <li>The site was given the ability to switch between light and dark themes using Javascript and CSS to set the mode and create a toggle between the two themes.</li>
+                    <li>To publish site to Heroku, various files were added to Github repository necessary for publishing (runtime.txt, requirements.txt, Procfile). The page was automatically deployed from GitHub repository.</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Findings</h2>
+        <div class="row">
+            <div class="col-7">
+                <ul>
+                    <li>Because the markets are impacted by a large magnitude of events, sources and people, the president's influence, as marked by the hapiness sentiment score using the methodology chosen by this project, in the market generally had low to no influence.</li>
+                    <li>Even if a correlation was found, the likelihood of causation versus correlation is also generally low.</li>
+                    <li>Using the methodology, we were able to present several unique visualizations, monitoring the tweets and S&P 500 over time, finding that the majority of Trump's tweets carried a positive sentiment value, trending more positive over time. Additionally, the President's tweet volume increased dramatically over the course of his 4-year term.</li>
+                    <li>The Random Forest model was the most accurate model giving us an accuracy score of 56% on the test data (87% on the training data); accuracy was improved by nearly 10% when data was limited to include tweets that only mentioned "market" "stock" or "economy".</li>
+                </ul>
             </div>
             <div class="col-5">
                 <img src="../static/Images/300px-Buddy_christ.jpg">

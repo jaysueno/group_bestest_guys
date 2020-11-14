@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{% block title %} The Goodest Guys Present: Old Man Yelling at Birds! {% endblock %}</h1>
+    <h1>{% block title %}  Trump Tweet Analysis {% endblock %}</h1>
+    <h5 style="text-align: center;">A look at President Trump’s Tweet Sentiment and how it affects the S&P 500.</h5>
     <div id="carouselIndicators" class="carousel slide carousel-fade" data-ride="carousel"  data-pause="hover">
         <ol class="carousel-indicators">
           <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -11,31 +12,39 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="../static/Images/market_scroller.jpg" alt="Home Slide">
+                <a href="#">
+                    <img class="d-block w-100 img-fluid" src="../static/Images/trump_twitter_scroller.jpg" alt="Home Slide">
+                </a>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                        <h3 class="carousel-text">Home</h3>
+                        <h5 class="carousel-text">It's were the heart is.</h5>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <a href="{{ url_for('project')}}">
+                    <img class="d-block w-100 img-fluid" src="../static/Images/const_scroller.jpg" alt="Project Slide">
+                </a>
                 <div class="carousel-caption d-none d-md-block">
-                        <h5>...</h5>
-                        <p>...</p>
+                    <h3 class="carousel-text">Da Project</h3>
+                    <h5 class="carousel-text">The meat and potatos with all the fixings.</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="../static/Images/const_scroller.jpg" alt="Project Slide">
+                <a href="{{ url_for('ml')}}">
+                    <img class="d-block w-100 img-fluid" src="../static/Images/blue_ge0_scroller.jpg" alt="Write up Slide">
+                </a>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>...</h5>
-                    <p>...</p>
+                    <h3 class="carousel-text">Project Write Up</h3>
+                    <h5 class="carousel-text">We have spoken.</h5>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="../static/Images/blue_ge0_scroller.jpg" alt="Machine Learning Slide">
+                <a href="{{ url_for('about')}}">
+                    <img class="d-block w-100 img-fluid" src="../static/Images/matric_scroller.jpg" alt="About Slide">
+                </a>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>...</h5>
-                    <p>...</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="../static/Images/matric_scroller.jpg" alt="About Slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>...</h5>
-                    <p>...</p>
+                    <h3 class="carousel-text">We are...</h3>
+                    <h5 class="carousel-text">the champions!</h5>
                 </div>
             </div>
         </div>
