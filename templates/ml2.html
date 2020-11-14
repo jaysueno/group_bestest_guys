@@ -9,51 +9,96 @@
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
     
-        <div class="mySlides">
-            <div class="numbertext">1 / 4</div>
-            <img src="img1_wide.jpg" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-            <div class="numbertext">2 / 4</div>
-            <img src="img2_wide.jpg" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-            <div class="numbertext">3 / 4</div>
-            <img src="img3_wide.jpg" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
-            <img src="img4_wide.jpg" style="width:100%">
-        </div>
-    
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-        <!-- Caption text -->
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-    
-        <!-- Thumbnail image controls -->
-        <div class="column">
-            <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
-        </div>
-    
-        <div class="column">
-            <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
-        </div>
-    
-        <div class="column">
-            <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
-        </div>
-    
-        <div class="column">
-            <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
-        </div>
+            <div class="mySlides">
+                <div class="numbertext">1 / 9</div>
+                <img src="../static/Images/Purpose1.PNG" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">2 / 9</div>
+                <img src="../static/Images/Cleaning2.PNG" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                <img src="../static/Images/Cleaning3.PNG" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                <img src="../static/Images/random_tree_vis2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                <img src="../static/Images/Screenshot 2020-11-14 105109.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                <img src="../static/Images/nlp_word_scoring.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                <img src="../static/Images/frontend_code_ss.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                <img src="../static/Images/rfc_outcome.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="../static/Images/average sentiment score vs sap.png" style="width:100%">
+            </div>
+        
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="../static/Images/Purpose1.PNG" onclick="currentSlide(1)" alt="Nature">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="../static/Images/Cleaning2.PNG" onclick="currentSlide(2)" alt="Snow">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="../static/Images/Cleaning3.PNG" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="../static/Images/random_tree_vis2.png" onclick="currentSlide(4)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="../static/Images/Screenshot 2020-11-14 105109.jpg" onclick="currentSlide(5)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="../static/Images/nlp_word_scoring.jpg" onclick="currentSlide(6)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="../static/Images/frontend_code_ss.png" onclick="currentSlide(7)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="../static/Images/rfc_outcome.jpg" onclick="currentSlide(8)" alt="Lights">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="../static/Images/average sentiment score vs sap.png" onclick="currentSlide(9)" alt="Lights">
+            </div>
         </div>
     </div>
     <div class="container">
@@ -91,8 +136,8 @@
         <h2>Methodology</h2>
         <div class="row">
             <div class="col-5">
-                <img src="../static/Images/Cleaning2.PNG" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                <img src="../static/Images/Cleaning3.PNG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="../static/Images/Cleaning2.PNG" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="../static/Images/Cleaning3.PNG" onclick="openModal();currentSlide(3)" class="hover-shadow">
             </div>
             <div class="col-7">
                     <p>1. Cleaning the Data:</p>
@@ -128,14 +173,14 @@
                 </ul>
             </div>
             <div class="col-5">
-                <img src="../static/Images/random_tree_vis2.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                <img src="../static/Images/Screenshot 2020-11-14 105109.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                <img src="../static/Images/nlp_word_scoring.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="../static/Images/random_tree_vis2.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                <img src="../static/Images/Screenshot 2020-11-14 105109.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                <img src="../static/Images/nlp_word_scoring.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
             </div>
         </div>
         <div class="row">
             <div class="col-5">
-                <img src="../static/Images/frontend_code_ss.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="../static/Images/frontend_code_ss.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
             </div>
             <div class="col-7">
                 <p>4. Front-end Delivery</p>
@@ -158,12 +203,8 @@
                 </ul>
             </div>
             <div class="col-5">
-            <a href="../static/Images/rfc_outcome.jpg">
-                <img src="../static/Images/rfc_outcome.jpg">
-            </a>
-                <a href="../static/Images/average sentiment score vs sap.png">
-                    <img src="../static/Images/average sentiment score vs sap.png">
-                </a>
+                 <img src="../static/Images/rfc_outcome.jpg"  onclick="openModal();currentSlide(8)" class="hover-shadow">
+                 <img src="../static/Images/average sentiment score vs sap.png"  onclick="openModal();currentSlide(9)" class="hover-shadow">
             </div>
         </div>
     </div>
