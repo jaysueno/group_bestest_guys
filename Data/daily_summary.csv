@@ -1,4 +1,4 @@
-index,date,tweets,isRetweet,isDeleted,avg_sentiment_score,sum_sentiment_score,delta_avg,retweets,favorites,word_count,positive,negative,neutral,s&p_%change,s&p_up/down
+index,date,tweets,isRetweet,isDeleted,avg_sentiment_score,sum_sentiment_score,delta_avg,retweets,favorites,word_count,positive,negative,neutral,gspc_change,gspc_up_down
 0,2016-11-08,17,4,0,5.855472404331779,915.4399999999999,0.09938831004371618,522435,1118266,908,12,0,4,0.004526056073952187,up
 1,2016-11-09,3,1,0,5.599523809523809,156.98,-0.15656028476425318,227982,700580,163,2,0,1,0.014871713731993913,up
 2,2016-11-10,1,0,0,6.65,39.9,0.8939159057119372,36535,142625,32,1,0,0,-4.618245088165623e-06,down
