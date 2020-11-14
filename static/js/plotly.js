@@ -1,32 +1,29 @@
+// Trace1 for the s&p Data
 var trace1 = {
-  type: "scatter",
-  mode: "lines",
   x: summary.month,
-  y: summary.tweets,
-  line: {color: '#17BECF'}
-}
-  
-var trace2 = {
-  type: "scatter",
-  mode: "lines",
-  x: summary.month,
-  y: summary.favorites,
-  line: {color: '#7F7F7F'}
-}
-
-var data = [trace1, trace2];
-
-var layout = {
-  title: 'Custom Range',
-  xaxis: {
-    range: ['2017-01-01', '2019-12-31'],
-    type: 'date'
-  },
-  yaxis: {
-    autorange: true,
-    //range: [86.8700008333, 138.870004167],
-    type: 'linear'
-  }
+  y: summary.s&p_%change,
+  text: summary.s&p_%change,
+  name: "S&P %",
+  type: "scatter"
 };
 
-Plotly.newPlot('plot', data, layout);
+// Trace 2 for the Roman Data
+// var trace2 = {
+//   x: data.map(row => row.pair),
+//   y: data.map(row => row.romanSearchResults),
+//   text: data.map(row => row.romanName),
+//   name: "Roman",
+//   type: "bar"
+// };
+
+// Combining both traces
+var data = [trace1];
+
+// Apply the group barmode to the layout
+var layout = {
+  title: "S&P 500 % Change by Month"
+  //barmode: "group"
+};
+
+// Render the plot to the div tag with id "plot"
+Plotly.newPlot("plot", data, layout);
