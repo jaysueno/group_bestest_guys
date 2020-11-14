@@ -86,6 +86,10 @@ img {
    margin: 7px;
 }
 
+.tensix {
+  width: 1016px !important;
+}
+
 .icon {
     height: 20px !important;
     width: 20px !important;
