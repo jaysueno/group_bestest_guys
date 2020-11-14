@@ -1,8 +1,8 @@
 // Trace1 for the s&p Data
 var trace1 = {
-  x: summary.month,
-  y: summary.s&p_%change,
-  text: summary.s&p_%change,
+  x: summary.map(s => s.month),
+  y: summary.map(s => +s.gspc_change),
+  text: summary.gspc_change,
   name: "S&P %",
   type: "scatter"
 };
