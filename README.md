@@ -50,8 +50,13 @@ This data set was used to evaluate the sentiment of President Trump's tweets dur
 - S&P Data: Data was grouped by day, week and month, and the percentage change and trend(up/down) was calculated. 
 - Trump Tweet data: Sentiment data was calculated by associating score with each word of the tweet and an average and sum of all of the words within each tweet was calculated. Tweets were grouped by day with an average of tweet sentiment across all tweets in a given day, assigned categorical values (negative, neutral, positive) based on average sentiment value (brought from Hedonometer data).
 
+<img src="/static/Images/Cleaning2.PNG" align = "center"/>
+
 2. Visualizing the Data
 - Visualization of the data was done using both Tableau and Javascript Libraries (Plotly).
+
+<img src="/static/Images/plotly1_bar_and_scatter.svg" class="tensix" align = "center"/>
+<img src="/static/Images/plotly3_positivity.svg" class="tensix" align = "center"/>
 
 3. Machine Learning Modeling
 - Seeking to test correlation between tweet sentiment data and S&P, machine learning algorithms were used to evaluate the relationship between the data sets.
@@ -61,6 +66,9 @@ This data set was used to evaluate the sentiment of President Trump's tweets dur
 - Hyper-tuning of the models was done to further define parameters in each model for suggestions.
 - Following the hyper-tuning, the data was re-entered to improve accuracy of the training models to decide which had highest accuracy. 
 - Though decreasing the size of the data set from 10,000+ to 600-700 records, accuracy of the model was increased by 10% when the data was filtered to use only tweets that included the terms "economy", "stock" and "market".
+
+<img src="/static/Images/Screenshot 2020-11-14 105109.jpg" align = "center"/>
+<img src="/static/Images/image.png"  align = "center"/>
 
 4. Front-end Delivery
 - Preparation of the web app started with a base flask application and 4 routes were built.
