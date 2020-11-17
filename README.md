@@ -82,5 +82,7 @@ This data set was used to evaluate the sentiment of President Trump's tweets dur
 - Using the methodology, we were able to present several unique visualizations, monitoring the tweets and S&P 500 over time, finding that the majority of Trump's tweets carried a positive sentiment value, trending more positive over time. Additionally, the President's tweet volume increased dramatically over the course of his 4-year term. 
 - The Random Forest model was the most accurate model giving us an accuracy score of 56% on the test data (87% on the training data); accuracy was improved by nearly 10% when data was limited to include tweets that only mentioned "market" "stock" or "economy". 
 
+<img src="../static/Images/average sentiment score vs sap.png" align = "center"/>
+
 
 
