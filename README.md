@@ -1,4 +1,4 @@
-<h1 align="center"> Trump Tweet Analysis </h1>
+<h1 align="center"> Machine Learning Predictor: S&P500 Market Movement Based On Trump Tweets </h1>
 <p align="center"> A look at President Trump’s Tweet Sentiment and how it affects the US Market Economy. Please note this is not meant to take any political stance. </p>
 
 ###
