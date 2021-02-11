@@ -1,5 +1,6 @@
 <h1 align="center"> Machine Learning Predictor: Trump's Tweet & The S&P500 </h1>
-<p align="center"> A look at President Trump’s Tweet Sentiment and how it affects the US Market Economy. Please note this is not meant to take any political stance. </p>
+<p align="center"> President Trump’s Tweet Sentiment and how it affects the US Market Economy.</p>
+<b align="center"> This is not meant to take any political stance. </b>
 
 ###
 <img src= "https://images.indianexpress.com/2017/11/trump-twitter-copy.jpg" align = "center"/>
